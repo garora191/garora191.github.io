@@ -27,29 +27,41 @@
         <div class="row">
           <div class="col-8 col-7-large col-12-medium" style="text-align: left">
             <header>
-              <h1><strong>Pothole Detection using CNN</strong></h1>
+              <h1><strong>Pothole Detection Model</strong></h1>
+              <p>Image Classification using Convolutional Neural Network (CNN)</p>
             </header>
-            <p><strong>The Problem</strong></a><br>
-              Reliable road infrastructure is a foundation for socioeconomic growth and a significant public asset. There is continuous degradation of public roadways due to changing weather conditions causing cracking of ashphalt and potholes. There is currently no effective way for municipalities to identify and locate potholes within their roadways</p>
-            <p><strong>Objective</strong></a><br>
-              Develop an image classification model that can detect the presence of potholes in images.</p>
+            <p><strong>Project Summary</strong></a><br>
+              There is continuous degradation of public roadways due to changing weather conditions causing cracking of asphalt and potholes. There is currently no effective way for municipalities to identify and locate potholes throughout the city without tremendous manual efforts.<br>
+              Using Convolutional Neural Networks, a pothole detection model has been developed for automatically identifying potholes in images of roadways. This model can be used with images of roadways collected from various sources, such as street view cars, dashboard cameras, and/or highway cameras.</p>
             <p><strong>Datasets</strong></a><br>
-              A total of 665 images of roadways with potholes were obtained from: <a href="https://makeml.app/datasets/potholes">MakeML.app</a><br>This dataset has been supplemented with images from Google Images and <a href="https://www.dreamstime.com">DreamsTime</a> for a total of 719 images.
-              <article>
-                <a class="image"><img height="350" src="images/data.png" alt="" /></a>
-              </article>
-              <p><strong>Methodology</strong></a><br>
-              Utilized TensorFlow/Keras to develop a Convolutional Neural Network (CNN) model<br>
-            Include NN architecture and model summary</p>
+              A total of 665 images of roadways with potholes were obtained from: <a href="https://makeml.app/datasets/potholes">MakeML.app</a>. This dataset has been supplemented with images from Google Images and <a href="https://www.dreamstime.com">DreamsTime</a> for a total of 719 images.<br>
+              For roadways without potholes, 718 images were sourced from Google Images and <a href="https://www.dreamstime.com">DreamsTime</a>.<br>
+              The images have been labeled as either "potholes" or "no potholes" for model training. Below is a sample of ten (10) images and their labels:
             <article>
-              <a class="image"><img height="300" src="images/cnn.png" alt="" /></a>
+              <a class="image"><img height="330" src="images/project1/data.png" alt="" /></a>
+            </article>
+            <p><strong>Methodology</strong></a><br>
+              Utilized Keras with TensorFlow to develop a Convolutional Neural Network (CNN) model for predicting the presence of potholes within an image. The CNN architecture includes convolution and pooling layers, followed by a fully connected network. The table below shows a summary of the neural network architecture.</p>
+            <article>
+              <a class="image"><img height="225" src="images/project1/table1.png" alt="" /></a>
+            </article>
+            <p>The image below is a visual representation of the model architecture:</p>
+            <article>
+              <a class="image"><img height="300" src="images/project1/cnn.png" alt="" /></a>
             </article>
             <p><strong>Results</strong></a><br>
-              Model performance<br>
-            Compare performance to LeNet and AlexNet benchmark models</p>
+            The model performance has been tested on 231 images and achieved an accuracy of 90%, as well as a macro-average F1-score of 90%.<br>
+            Image below shows the confusion matrix for the test images:</p>
+            <article>
+              <a class="image"><img height="200" src="images/project1/table2.png" alt="" /></a>
+            </article>
+            <p>The model performance has been compared against some benchmark CNN model architectures for image classification; LeNet-5 and AlexNet models. The table below shows the comparison of results:</p>
+            <article>
+              <a class="image"><img height="120" src="images/project1/table3.png" alt="" /></a>
+            </article>
             <footer>
-              <h4>For more details, please see
-              <a href="https://github.com/garora191/894-Team-Project">GitHub</a>
+              <h4>For model code, including the benchmark models, please see my GitHub.</h4>
+              <a href="https://github.com/garora191/894-Team-Project" class="button">GitHub Repo</a>
             </footer>
           </div>
         </div>
