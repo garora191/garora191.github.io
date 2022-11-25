@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Cineplex Project</title>
+		<title>Coca-Cola Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,34 +27,19 @@
         <div class="row">
           <div class="col-8 col-7-large col-12-medium" style="text-align: left">
             <header>
-              <h2><strong>Predicting Consumer Behaviour</strong></h2>
-              <p>Will Joe buy a large popcorn?</p>
+              <h2><strong>Marketing Mix Modeling for Coca-Cola</strong></h2>
             </header>
             <article>
-              <a class="image"><img height="400" src="images/project2/cineplex.jpg" alt="" /></a>
+              <a class="image"><img height="400" src="images/project3/cocacola.jpg" alt="" /></a>
             </article>
             <p><strong>Project Summary</strong></a><br>
-              Cineplex uses SCENE loyalty program as a strategic asset to collect data on members and use it to gain a better understanding of their customers. While the largest source of revenue for Cineplex is the box office sales, they are looking to improve the sales in the food category. For this project, I utilized supervised machine learning techniques to model the sale of “MenuFood”, which includes food items other than popcorn and candy (nachos, hotdog, etc.).</p>
+              As a part of the MMAI program, I worked with Google and Coca-Cola Canada to conduct exploratory data analysis (EDA) on Coca-Cola's sales data to gain insight about the relationship between digital advertising spend and revenue. Furthermore, developed a marketing mix model to recommend optimal advertising mix for different budget levels.</p>
             <p><strong>Datasets</strong></a><br>
-              Cineplex has provided a dataset consisting of 170,000 transactions from approximately 7,000 members for 2019 from their SCENE database. The data includes Member ID, Location, Date, Time, information on purchases made, and more.</p>
+              We were provided with the campaign and sales data for 2019 and 2020. The campaign data included information on campaign, location, placement, and date, as well as impressions, clicks, views, and media cost. The campaign data was merged with the sales data based on weeks.</p>
             <p><strong>Methodology</strong></a><br>
-              I first used exploratory data anlysis and unsupervised machine-learning to analyze the trends and patterns of sales. I utilized clustering techniques to segment customers into groups and build personas.<br>
+              The campaign data was analyzed at a national level and a city level to identify features that contribute to an increase in impressions and clicks. Conducted a time-series analysis to identify changes in media cost, impressions, and clicks. Also analyzed the sales data to identify any specific campaigns that contributed to increased sales. <br>
               <br>
-              Next, I developed a classification model to predict the likelihood of a customer to purphase the specific concession item ("MenuFood"). I performed data cleaning, preprocessing, and feature engineering (OHE, aggregations) to prepare the data for modeling. As a part of the model development phase, I trained and tested several classification algorithms, including Decision Trees, KNN, SVM, Random Forest, XGBoost, and other ensemble methods.</p>
-            <article>
-              <a class="image"><img height="275" src="images/project2/models.png" alt="" /></a>
-            </article>
-            <p><strong>Results</strong></a><br>
-            The Gradient Tree Boosting algorithm was found to perform the best on the test dataset, achieiving a macro-average F1-score of 0.676. <br>
-            Image below shows the confusion matrix for the test cases:</p>
-            <article>
-              <a class="image"><img height="200" src="images/project2/cm.png" alt="" /></a>
-            </article>
-            <p>Furthermore, through feature importances, it was determined that the likelihood of a customer to purchase a "MenuFood" item depends on the customer's historical concession purchases.</p>
-            <footer>
-              <h4>For model code, please see my GitHub.</h4>
-              <a href="https://github.com/garora191/ML-Cineplex-Concessions" class="button">GitHub Repo</a>
-            </footer>
+              For the MMM, I utilized Baysian Regression to model the relationship between marketing attributes to return on investment and increased sales. </p>
           </div>
         </div>
       </div>
